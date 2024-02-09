@@ -2,7 +2,7 @@ from eth_keys import keys
 import os
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
-api_key = "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"
+api_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 import requests
 import json
 class Ethereum:
@@ -43,7 +43,7 @@ class Ethereum:
         balance_wei = int(response['result'], 16)
         balance_eth = balance_wei / 1e18  # Convert Wei to Ether
         return balance_eth
-rpc = Ethereum("https://eth-mainnet.g.alchemy.com/v2/i_AyXcC8sLn1ZVsJsCfqOHBV0kZ3I4K7")
+rpc = Ethereum("https://eth-mainnet.g.alchemy.com/v2/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 rpc.test_server()
 class SendGridEmailSender:
     def __init__(self):
